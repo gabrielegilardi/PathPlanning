@@ -4,6 +4,7 @@ Path Planning Using Particle Swarm Optimization
 
 Copyright (c) 2021 Gabriele Gilardi
 
+
 Main Quantities
 ---------------
 start           Start coordinates.

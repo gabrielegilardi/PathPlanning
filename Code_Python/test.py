@@ -5,17 +5,11 @@ Path Planning Using Particle Swarm Optimization
 Copyright (c) 2021 Gabriele Gilardi
 
 
-References
-----------
-- PSO: https://github.com/gabrielegilardi/PSO.git.
-- Centroid calculation: http://en.wikipedia.org/wiki/Centroid.
-- Points inside polygons: http://paulbourke.net/geometry/polygonmesh/.
-
 Features
 --------
-- The code has been written and tested in Python 3.8.5.
 - Implementation of particle swarm optimization (PSO) for path planning when
   the layout is known.
+- The code has been written and tested in Python 3.8.5.
 - Four types of obstacles: circle, ellipse, convex polygon, generic polygon.
 - Start position, goal position, and obstacles can be dynamically changed to
   simulate motion.
@@ -90,6 +84,12 @@ Example 3
 - Single run, linear spline, optimizer initialized with the previous solution,
   start point chasing a moving goal with one obstacle (the circle) also moving.
 - See <Results_Example_3.gif> for the full animation.
+
+References
+----------
+- PSO: https://github.com/gabrielegilardi/PSO.git.
+- Centroid calculation: http://en.wikipedia.org/wiki/Centroid.
+- Points inside polygons: http://paulbourke.net/geometry/polygonmesh/.
 """
 
 import sys

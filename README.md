@@ -1,6 +1,6 @@
 # Path Planning Using Particle Swarm Optimization
 
-## Reference
+## References
 
 - [PSO code](https://github.com/gabrielegilardi/PSO.git).
 
@@ -11,8 +11,6 @@
 ## Features
 
 - The code has been written and tested in Python 3.8.5.
-
-- Implementation of particle swarm optimization (PSO) for path planning when the layout is known.
 
 - Four types of obstacles: circle, ellipse, convex polygon, generic polygon.
 
@@ -28,7 +26,7 @@
 
 - Usage: *python test.py example*.
 
-## Parameters
+## Main Parameters
 
 `example` Number of the example to run (1, 2, or 3.)
 
@@ -78,7 +76,7 @@ There are three examples, all of them using the same obstacles:
 
 - See the code for the parameters used.
 
-![example_1](Results_Example_1.png).
+![example_1](Results_Example_1.png)
 
 **Example 2**
 
@@ -90,7 +88,7 @@ There are three examples, all of them using the same obstacles:
 
 - See the code for the parameters used.
 
-![example_2](Results_Example_2.png).
+![example_2](Results_Example_2.png)
 
 **Example 3**
 
@@ -98,13 +96,7 @@ There are three examples, all of them using the same obstacles:
 
 - Path length goes from 11.53 (run 1) to 4.52 (run 65).
 
-- Start position from [0.00,5.00] to [1.36,-0.81].
-
-- Goal position from [8.00,-2.00] to [-1.27,-4.48].
-
-- Obstacle position from [2.00,-2.00] to [3.04,-2.60].
-
 - No obstacle violations.
 
 - See the code for the parameters used.
-![example_3](Results_Example_3.gif).
+![example_3](Results_Example_3.gif)
