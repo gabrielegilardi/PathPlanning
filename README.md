@@ -1,13 +1,5 @@
 # Path Planning Using Particle Swarm Optimization
 
-## References
-
-- [PSO code](https://github.com/gabrielegilardi/PSO.git).
-
-- [Centroid calculation](http://en.wikipedia.org/wiki/Centroid).
-
-- [Points inside polygons](http://paulbourke.net/geometry/polygonmesh/).
-
 ## Features
 
 - The code has been written and tested in Python 3.8.5.
@@ -100,3 +92,11 @@ There are three examples, all of them using the same obstacles:
 
 - See the code for the parameters used.
 ![example_3](Results_Example_3.gif)
+
+## References
+
+- [PSO code](https://github.com/gabrielegilardi/PSO.git).
+
+- [Centroid calculation](http://en.wikipedia.org/wiki/Centroid).
+
+- [Points inside polygons](http://paulbourke.net/geometry/polygonmesh/).
