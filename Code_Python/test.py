@@ -2,13 +2,15 @@
 Path Planning Using Particle Swarm Optimization
 
 
+Implementation of particle swarm optimization (PSO) for path planning when the
+environment is known.
+
+
 Copyright (c) 2021 Gabriele Gilardi
 
 
 Features
 --------
-- Implementation of particle swarm optimization (PSO) for path planning when
-  the environment is known.
 - The code has been written and tested in Python 3.8.5.
 - Four types of obstacles: circle, ellipse, convex polygon, generic polygon.
 - Start position, goal position, and obstacles can be dynamically changed to

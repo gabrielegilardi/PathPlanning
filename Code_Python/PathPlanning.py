@@ -2,6 +2,10 @@
 Path Planning Using Particle Swarm Optimization
 
 
+Implementation of particle swarm optimization (PSO) for path planning when the
+environment is known.
+
+
 Copyright (c) 2021 Gabriele Gilardi
 
 
