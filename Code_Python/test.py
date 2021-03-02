@@ -98,6 +98,7 @@ import sys
 from copy import deepcopy
 import numpy as np
 from matplotlib.animation import FuncAnimation
+
 from PathPlanning import *
 
 # Read example to run (1, 2, or 3)
