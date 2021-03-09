@@ -93,6 +93,7 @@ There are three examples, all of them using the same obstacles:
 - No obstacle violations.
 
 - See the code for the parameters used.
+
 ![example_3](Results_Example_3.gif)
 
 ## References
