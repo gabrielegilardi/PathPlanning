@@ -10,7 +10,7 @@ Implementation of particle swarm optimization (PSO) for path planning when the e
 
 - Start position, goal position, and obstacles can be dynamically changed to simulate motion.
 
-- Penalty function of type `1/d` with the center in the obstacle centroid.
+- Penalty function of type `1/x` with the center in the obstacle centroid.
 
 - To improve the execution speed, the algorithms to determine if a point is inside an obstacle have been designed to carry out the determination on all points simultaneously.
 
