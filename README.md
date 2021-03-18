@@ -10,7 +10,7 @@ Implementation of particle swarm optimization (PSO) for path planning when the e
 
 - Start position, goal position, and obstacles can be dynamically changed to simulate motion.
 
-- Penalty function of type `1/d` with the center in the obstacle centroid.
+- Penalty function of type `1/x` with the center in the obstacle centroid.
 
 - To improve the execution speed, the algorithms to determine if a point is inside an obstacle have been designed to carry out the determination on all points simultaneously.
 
@@ -40,7 +40,7 @@ Implementation of particle swarm optimization (PSO) for path planning when the e
 
 `f_interp` Order of the spline (1st, 2nd and 3rd order, respectively.)
 
-`Xinit` Initial value of the variables. Set Xinit=None to pick them randomly. This array is organized with first the x-coordinates of all internal points and then the y-coordinates of all internal points.
+`Xinit` Initial value of the variables. Set `Xinit=None` to pick them randomly. This array is organized with first the x-coordinates of all internal points and then the y-coordinates of all internal points.
 
 `K` Average size of each agent's group of informants. If `K=0` the entire swarm is used as agent's group of informants.
 
@@ -48,7 +48,7 @@ Implementation of particle swarm optimization (PSO) for path planning when the e
 
 `vel_fact` Velocity factor to calculate the maximum and the minimum allowed velocities.
 
-`conf_type` Confinement type (on the velocities): `HY=` hyperbolic, `RB=` random-back, `MX=` mixed hyeperbolic/random-back.
+`conf_type` Confinement type (on the velocities): `HY=hyperbolic`, `RB=random-back`, `MX=mixed hyeperbolic/random-back`.
 
 `IntVar` List of indexes specifying which variable should be treated as integer. If all variables are real set `IntVar=None`, if all variables are integer set `IntVar=all`.
 
@@ -93,6 +93,7 @@ There are three examples, all of them using the same obstacles:
 - No obstacle violations.
 
 - See the code for the parameters used.
+
 ![example_3](Results_Example_3.gif)
 
 ## References
