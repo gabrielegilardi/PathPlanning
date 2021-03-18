@@ -1,6 +1,5 @@
 """
-Multivariate Regression and Classification Using an Adaptive Neuro-Fuzzy
-Inference System (Takagi-Sugeno) and Particle Swarm Optimization.
+Metaheuristic Minimization Using Particle Swarm Optimization.
 
 Copyright (c) 2021 Gabriele Gilardi
 """
@@ -222,7 +221,7 @@ def PSO(func, LB, UB, nPop=40, epochs=500, K=0, phi=2.05, vel_fact=0.5,
 
 def group_best(informants, agent_best_pos, agent_best_cost):
     """
-    Determine the group best position of each agent based on the agent
+    Determines the group best position of each agent based on the agent
     informants.
     """
     nPop, nVar = agent_best_pos.shape
@@ -245,7 +244,7 @@ def group_best(informants, agent_best_pos, agent_best_cost):
 
 def hypersphere_point(Gr, agent_pos):
     """
-    For each agent determine a random point inside the hypersphere (Gr,|Gr-X|),
+    For each agent determines a random point inside the hypersphere (Gr,|Gr-X|),
     where Gr is its center, |Gr-X| is its radius, and X is the agent position.
     """
     nPop, nVar = agent_pos.shape
@@ -268,7 +267,7 @@ def hypersphere_point(Gr, agent_pos):
 
 def hyperbolic_conf(agent_pos, agent_vel, UB, LB):
     """
-    Apply hyperbolic confinement to agent velocities (calculation is done on
+    Applies hyperbolic confinement to agent velocities (calculation is done on
     all agents to avoid loops but the change will be applied only to the agents
     actually outside the search space).
     """
@@ -286,7 +285,7 @@ def hyperbolic_conf(agent_pos, agent_vel, UB, LB):
 
 def random_back_conf(agent_vel):
     """
-    Apply random-back confinement to agent velocities (calculation is done on
+    Applies random-back confinement to agent velocities (calculation is done on
     all agents to avoid loops but the change will be applied only to the agents
     actually outside the search space).
     """
@@ -300,7 +299,7 @@ def random_back_conf(agent_vel):
 
 def mixed_conf(agent_pos, agent_vel, UB, LB):
     """
-    Apply a mixed-type confinement to agent velocities (calculation is done on
+    Applies a mixed-type confinement to agent velocities (calculation is done on
     all agents to avoid loops but the change will be applied only to the agents
     actually outside the search space).
 
