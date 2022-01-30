@@ -10,7 +10,7 @@ Implementation of particle swarm optimization (PSO) for path planning when the e
 
 - Start position, goal position, and obstacles can be dynamically changed to simulate motion.
 
-- Penalty function of type `1/x` with the center in the obstacle centroid.
+- Penalty function of type `1/x` with the center in the obstacle centroid*.
 
 - To improve the execution speed, the algorithms to determine if a point is inside an obstacle have been designed to carry out the determination on all points simultaneously.
 
@@ -20,6 +20,8 @@ Implementation of particle swarm optimization (PSO) for path planning when the e
 
 - Usage: *python test.py example*.
 
+*For some obstacle the centroid may be outside the obstacle, such as the U-shaped obstacle in the below examples. If that is a problem (for example if the optimal path may be passing close to it) the simples solution is to divide the obstacle in smaller shapes with inside centroids. For the U-shape obstacle below the problem could be solved using two vertical obstacles and one horizontal obstacle.
+     
 ## Main Parameters
 
 `example` Number of the example to run (1, 2, or 3.)
